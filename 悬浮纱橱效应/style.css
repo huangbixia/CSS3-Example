@@ -1,0 +1,39 @@
+html, body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white; }
+
+.box {
+  width: 900x;
+  height: 481px;
+  text-align: center;
+  font-size: 150px;
+  line-height: 481px;
+  font-family: sans-serif;
+  overflow: hidden; }
+  .box span {
+    display: inline-block;
+    color: blue;
+    transition: 1s;
+    float: left; }
+    .box span:nth-child(odd) {
+      transform: translateY(-100%); }
+    .box span:nth-child(even) {
+      transform: translateY(100%); }
+    .box span::before {
+      content: attr(data-text);
+      position: absolute;
+      color: red;
+      width: 180px;
+      height: 481px;
+      display: inline-block; }
+    .box span:nth-child(odd)::before {
+      transform: translateY(150%); }
+    .box span:nth-child(even)::before {
+      transform: translateY(-124%); }
+  .box:hover span {
+    transform: translateY(0); }
+
+/*# sourceMappingURL=style.css.map */
