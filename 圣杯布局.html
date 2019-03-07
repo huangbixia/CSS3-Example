@@ -1,0 +1,45 @@
+<!DOCTYPE>
+<html>
+<head>
+	<style>
+		* {
+		  margin: 0;
+		  padding: 0;
+		}
+		.HolyGrail {
+		  display: flex;
+		  min-height: 100vh;
+		  flex-direction: column;
+		}
+		header {
+		  background: #eee;
+		}
+		footer {
+		  background: lightblue;
+		}
+		header, footer {
+		  flex: 1;
+		}
+		.HolyGrail-body {
+		  display: flex;
+		  flex: 1;
+		}
+
+		.HolyGrail-content {
+		  flex: 1;
+		}
+
+	</style>
+	<title>无标题文档</title>
+
+</head>	
+<body class="HolyGrail">
+  <header>header</header>
+  <div class="HolyGrail-body">
+    <main class="HolyGrail-content">HolyGrail-content</main>
+    <nav class="HolyGrail-nav">HolyGrail-nav</nav>
+    <aside class="HolyGrail-ads">HolyGrail-ads</aside>
+  </div>
+  <footer>footer</footer>
+</body>
+</html>
